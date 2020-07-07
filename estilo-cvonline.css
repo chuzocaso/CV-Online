@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+html, body{
+    background: #5b78a7;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+.nombre{
+    text-align: center;
+}
+#foto{
+    display: inline-block;
+    border-radius: 50%;
+}
+.seccionizq{
+    display: inline-block;
+    width: 30%;
+    border: 0;
+    margin: 0;
+    vertical-align: top;
+    text-align: center;
+    background-color: #1C6EA4;
+    color: white;
+    padding: 1%;
+    min-height: 100%;
+    overflow-y: hidden;
+}
+.seccionizq h2{
+    text-align: center;
+}
+.menu ul li{
+    background-color: #2e518b;
+}
+.nave {
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+.nave li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    padding: 10px;
+}
+.menu ul li {
+    margin: 10px;
+}
+.menu ul li:hover{
+    background: #5b78a7;
+}
+.nave li a:visited{
+    color: #fff;
+}
+.seccionder{
+    display: inline-block;
+    width: 70%;
+    min-height: 100%;
+    border: 0;
+    margin: 0;
+    vertical-align: top;
+    background-color: white;
+    padding: 10px 30px;
+    overflow-y: visible;
+}
+.seccion{
+    border: 0;
+    margin: 20px 0px;
+    vertical-align: top;
+    border-bottom: #1C6EA4 solid 1px;
+}
+.datos{
+    font-style: italic;
+    text-decoration-line: underline;
+}
+.listadedatos{
+    text-align: left;
+    list-style: none;
+    padding: 10px;
+}
+#explaboral ol, #formacion ol {
+    list-style: none;
+    padding: 10px;
+}
+.elementoconfecha{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.fecha{
+    font-style: oblique;
+    width: 20%;
+    align-self: center;
+}
+.descripcion{
+    align-self: stretch;
+    justify-content: flex-start;
+    width: 80%;
+    border-left: black 1px solid;
+    padding-left: 10px;
+}
+.seccion ul li{
+    display: inline-block;
+    text-align: center;
+}
+h2{
+    text-decoration: underline;
+}
+.imgportfolio{
+    height: 150px;
+    width: 150px;
+}
+.figportfolio{
+    margin: 1%;
+}
