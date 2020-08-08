@@ -5,6 +5,25 @@
         <title>CV-Caso Molina Rodrigo</title>
         <link rel="stylesheet" type="text/css" href="estilo-cvonline.css">
     </head>
+    <script>
+      window.onload = function() {
+        edad = getEdad("1992/04/28");
+        document.getElementById("edad").innerHTML = edad + " años";
+      }
+      function getEdad(dateString) {
+        let hoy = new Date()
+        let fechaNacimiento = new Date(dateString)
+        let edad = hoy.getFullYear() - fechaNacimiento.getFullYear()
+        let diferenciaMeses = hoy.getMonth() - fechaNacimiento.getMonth()
+        if (
+          diferenciaMeses < 0 ||
+          (diferenciaMeses === 0 && hoy.getDate() < fechaNacimiento.getDate())
+        ) {
+          edad--
+        }
+        return edad
+      }
+    </script>
     <body>
         <div class=seccionizq>
             <h1 class="nombre">RODRIGO CASO MOLINA</h1>
@@ -16,7 +35,7 @@
             <ul class="listadedatos">
                 <li><span class="datos">Lugar y fecha de nacimiento</span>: Tarija - Bolivia 28/04/1992</li>
                 <li><span class="datos">Lugar de Residencia</span>: Córdoba - Capital</li>
-                <li><span class="datos">Edad</span>: 26 años</li>
+                <li><span class="datos">Edad</span>: <span id="edad"></span></li>
                 <li><span class="datos">Estado Civil</span>: Soltero</li>
                 <li><span class="datos">DNI</span>: 98.765.432</li>
                 <li><span class="datos">Pasaporte</span>: 1.234.567</li>
